@@ -155,5 +155,10 @@
 
 			}
 		});
+	
+	// Skill.
+
+    $('.skill').simpleSkillbar({background: "#4acaa8"});
+
 
 })(jQuery);

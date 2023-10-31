@@ -224,16 +224,157 @@ input, select, textarea {
 			padding: 1em 1.5em;
 		}
 
-	.align-left {
+	.align-left,.text-left {
 		text-align: left;
 	}
 
-	.align-center {
+	.align-center,.text-center {
 		text-align: center;
 	}
 
-	.align-right {
+	.align-right,.text-right {
 		text-align: right;
+	}
+
+/* Padding */
+	.pt-0 {
+		padding-top: 0px;
+	}
+	
+	.pt-10 {
+		padding-top: 10px;
+	}
+	
+	.pt-15 {
+		padding-top: 15px;
+	}
+	
+	.pt-20 {
+		padding-top: 20px;
+	}
+	
+	.pt-25 {
+		padding-top: 25px;
+	}
+	
+	.pt-30 {
+		padding-top: 30px;
+	}
+	
+	.pt-40 {
+		padding-top: 40px;
+	}
+	
+	.pt-50 {
+		padding-top: 50px;
+	}
+	
+	.pt-60 {
+		padding-top: 60px;
+	}
+	
+	.pt-70 {
+		padding-top: 70px;
+	}
+	
+	.pt-80 {
+		padding-top: 80px;
+	}
+	
+	.pt-90 {
+		padding-top: 90px;
+	}
+	
+	.pt-100 {
+		padding-top: 100px;
+	}
+	
+	.pt-120 {
+		padding-top: 120px;
+	}
+	
+	.pt-150 {
+		padding-top: 150px;
+	}
+	
+	.pt-170 {
+		padding-top: 170px;
+	}
+	
+	.pb-0 {
+		padding-bottom: 0px;
+	}
+	
+	.pb-10 {
+		padding-bottom: 10px;
+	}
+	
+	.pb-15 {
+		padding-bottom: 15px;
+	}
+	
+	.pb-20 {
+		padding-bottom: 20px;
+	}
+	
+	.pb-25 {
+		padding-bottom: 25px;
+	}
+	
+	.pb-30 {
+		padding-bottom: 30px;
+	}
+	
+	.pb-40 {
+		padding-bottom: 40px;
+	}
+	
+	.pb-50 {
+		padding-bottom: 50px;
+	}
+	
+	.pb-60 {
+		padding-bottom: 60px;
+	}
+	
+	.pb-70 {
+		padding-bottom: 70px;
+	}
+	
+	.pb-80 {
+		padding-bottom: 80px;
+	}
+	
+	.pb-90 {
+		padding-bottom: 90px;
+	}
+	
+	.pb-100 {
+		padding-bottom: 100px;
+	}
+	
+	.pb-120 {
+		padding-bottom: 120px;
+	}
+	
+	.pb-150 {
+		padding-bottom: 150px;
+	}
+	
+	.pr-30 {
+		padding-right: 30px;
+	}
+	
+	.pl-30 {
+		padding-left: 30px;
+	}
+	
+	.pl-90 {
+		padding-left: 90px;
+	}
+	
+	.p-40 {
+		padding: 40px;
 	}
 
 /* Row */
@@ -2685,6 +2826,41 @@ input, select, textarea {
 				margin-bottom: 0;
 			}
 
+/* Badges */
+
+.badge-row  {
+	/* border-top: solid 3px #f4f4f4; */
+	margin-bottom: 2.25em;
+	padding-top: 2.25em;
+}
+
+	.badge-row :first-child {
+		border-top: 0;
+		padding-top: 0;
+	}
+
+	.badge-row  .image {
+		display: inline-block;
+		padding-right: 2.5em;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+		.badge-row  .image img {
+			display: block;
+			width: 100%;
+		}
+
+	.badge-row  .inner {
+		display: inline-block;
+		vertical-align: middle;
+		width: 50%;
+	}
+
+		.badge-row  .inner > :last-child {
+			margin-bottom: 0;
+		}
+			
 /* Header */
 
 	#header {
@@ -3314,3 +3490,23 @@ input, select, textarea {
 			}
 
 	}
+
+/*-------- Start Skillbar Style  -------------*/
+	.single-skill p {
+		margin-top: 30px;
+		margin-bottom: 5px;
+		text-align: right;
+	}
+	
+	.sb_progress {
+		height: 14px !important;
+		border-radius: 12px;
+		border: 3px solid #eee;
+	}
+	
+	.sb_bar {
+		height: 8px !important;
+		border-radius: 12px;
+	}
+  
+/*--------  End Skillbar Style  -------------*/

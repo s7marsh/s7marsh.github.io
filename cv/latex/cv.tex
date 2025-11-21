@@ -1,0 +1,241 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+\usepackage{fontawesome5}
+\usepackage{lastpage} % <--- added package for total pages
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Shintaro Marzo} \\ \vspace{5pt}
+
+    \small \faPhone\ \href{tel:+639275876218}{\underline{+63 927 587 6218}} $|$ 
+    \faEnvelope\ \href{mailto:shinmarsh@gmail.com}{\underline{shinmarsh@gmail.com}} $|$ 
+    \faLinkedin\ \href{https://linkedin.com/in/shinmarsh}{\underline{linkedin.com/in/shinmarsh}} $|$
+    \faGithub\ \href{https://github.com/s7marsh}{\underline{github.com/s7marsh}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \item\small \justifying
+    Senior Verification Engineer with 7+ years of experience in ASIC and FPGA verification. Proven ability to apply full metric-driven methodologies to complex systems. Expertise in verification processes, UVM, SVA, and mixed-signal flows. Successfully verified 20+ digital and mixed-signal subsystems, with minimal to zero defects in production.
+  \resumeSubHeadingListEnd
+
+%
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item\small{
+     \textbf{Methodologies}{: Universal Verification Methodology (UVM), Metric Driven Verification (MDV), Formal Verification (UNR, FPV, Connectivity), Mixed-Signal Verification, Gate-Level Simulation (GLS), Emulation} \\
+     \textbf{Protocols}{: I2C, SPI, AMBA AHB, AXI4, AXI-Stream, APB, I3C, JTAG} \\
+     \textbf{Verified Blocks}{: Fuse/OTP/NVM Controller, Design for Test (DFT), Security (PUF, Crypto), FPGA Configuration Bitstream, Analog Control Blocks} \\
+     \textbf{Languages}{: SystemVerilog (SV), Assertions (SVA), Verilog, Python, TCL, Make, C/C++, bash/csh} \\
+     \textbf{EDA Tools}{: Cadence Xcelium, vManager, SimVision, JasperGold, Verisium SimAI, Palladium} \\
+     \textbf{Other Tools}{: Git, Perforce, Jenkins, Atlassian JIRA, Confluence, VSCode, Cursor AI, DVT Eclipse} \\
+     \textbf{Others}{: Verification Planning, Feature Extraction, Architecting Testbench, Object Oriented Programming (OOP), Debugging, Regression Execution, Coverage Closure} \\
+     \textbf{Soft Skills}{: Leadership, Nimble Learner, Critical Thinking, Communicates Effectively, Mentoring and Coaching}
+    }}
+ \end{itemize}
+
+%-----------PROFESSIONAL HISTORY-----------
+\section{Professional History}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Design Verification Engineer}{Feb 2024 -- Present}
+      {Lattice Semiconductor (PH) Corporation}{}
+      \resumeItemListStart
+        \resumeItem{Delivered timely verification of the security hardware, firmware, and configuration subsystem of the Lattice Avant and Nexus FPGAs}
+        \resumeItem{Collaborated with DV team members to improve testbench using UVM while supporting legacy tests}
+        \resumeItem{Leveraged use of emulation (Cadence Palladium) to supplement simulation and speed up verification of cryptography algorithms (RSA, ECDSA, EdDSA)}
+        \resumeItem{Improved verification flow quality by setting up Cadence vManager and integrating it with the existing simulation infrastructure}
+        \resumeItem{Explored and leveraged AI/ML tools (Verisium SimAI) to improve regression efficiency and maximize coverage}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Design Verification Engineer}{May 2022 -- Jan 2024}
+      {Analog Devices Gen. Trias, Inc}{}
+      \resumeItemListStart
+        \resumeItem{Led a verification team of 4 engineers in developing and executing a comprehensive UVM-based verification plan for an SoC project, enabling on-time tape-out}
+        \resumeItem{Architected a reusable verification environment for a multi-project wafer consisting of 4 projects, removing redundant development cycles across each}
+        \resumeItem{Automated revision control change detection for first build failure using Jenkins and Perforce, saving debug time}
+        \resumeItem{Optimized simulation infrastructure using process-based save restart setup for UVM}
+        \resumeItem{Mentored a senior design engineer and coached a junior DV engineer to improve their verification skills}
+        \resumeItem{Active participant in verification initiatives and methodology improvements}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Digital Design Verification Engineer}{May 2018 -- May 2022}
+      {Analog Devices Gen. Trias, Inc}{}
+      \resumeItemListStart
+        \resumeItem{Digital Verification owner for multiple projects resulting to minimal to zero defects post-silicon}
+        \resumeItem{Developed and executed verification plans and strategies for complex electronic designs, ensuring timely and high-quality results}
+        \resumeItem{Architect and implement testbench components using SV/UVM to expose bugs and flaws}
+        \resumeItem{Setup simulation environment for both RTL and Gates verification}
+        \resumeItem{Collaborate with cross-functional teams to debug and resolve design and verification issues}
+        \resumeItem{Analyze coverage and plan metrics to assess the effectiveness of verification and trend towards sign off}
+        \resumeItem{Contributed to team improvement initiatives, sharing knowledge and best practices to help the team achieve its goals}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Engineering Student Intern}{Aug 2016 -- Dec 2016}
+      {Analog Devices Gen. Trias, Inc}{}
+      \resumeItemListStart
+        \resumeItem{Completed introduction to Metric Driven Verification and Assertion Based Verification trainings}
+        \resumeItem{Increase verification quality by introducing JasperGold Formal Verification tools with the help of my mentor}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Training Assistant}{Jun 2016 -- Jul 2016}
+      {Philippine Institute for Integrated Circuits}{}
+      \resumeItemListStart
+        \resumeItem{Completed fast-paced training programs that covered all aspects of IC design.}
+        \resumeItem{Shared my knowledge and experience with trainees, helping them to develop a strong foundation in IC design.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Batangas State University}{2012 -- 2017}
+      {Bachelor of Science in Electronics Engineering, Major in Microelectronics}{}
+      \resumeItemListStart
+        \resumeItem{Developed an educational binary to decimal shooting video game using Verilog and FPGA.}
+        \resumeItem{Thesis involved designing sub-blocks for an OOK RF Transceiver in 45nm CMOS process}
+        \resumeItem{Ranked Top 4 in the April 2018 Professional Regulation Commission (PRC) Electronics Engineer Licensure Examination}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------AWARDS & RECOGNITION-----------
+\section{Awards \& Recognition}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item\small{
+     \textit{2025}{ | }\textbf{Team Contributor}{, Successful tapeout of an advanced Avant mid-range FPGA} \\
+     \textit{2025}{ | }\textbf{Leadership}{, Led Cadence vManager working group to improve verification methodology and quality} \\
+     \textit{2024}{ | }\textbf{Individual Contributor}{, Quick turn around in creating key tests to ensure the quality of the project} \\
+     \textit{2023}{ | }\textbf{Nominated}{, Top Outstanding Young Professional} \\
+     \textit{2022}{ | }\textbf{Team Contributor}{, Helped outside of the team that led to a successful tape out of the project} \\
+     \textit{2022}{ | }\textbf{Team Contributor}{, Developed training materials used by newly hired engineers of the team} \\
+     \textit{2022}{ | }\textbf{Leadership}{, Led three verification projects that taped out in a single quarter} \\
+     \textit{2021}{ | }\textbf{Individual Contributor}{, Digital Verification lead of his first project after training; going beyond the scope by covering Mixed Signal verification; resulted in silicon success; gained respect and trust of his lead bringing more projects}
+    }}
+ \end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}
